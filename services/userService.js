@@ -22,7 +22,7 @@ const authenticateUser = async ({ username, password }) => {
   if (!isMatch) {
     throw new Error('Password is incorrect!');
   }
-  return user;  // In a real-world scenario, you'd want to return a token instead
+  return user; 
 };
 
 const getUserById = async (id) => {
