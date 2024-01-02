@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Book = require('../models/book');
 
 // MongoDB connection string
-const dbURI = process.env.DB_URI;
+const DB_URI = process.env.DB_URI;
 
 mongoose.connect(DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB...'))
