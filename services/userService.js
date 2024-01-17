@@ -22,7 +22,7 @@ const authenticateUser = async ({ username, password }) => {
   if (!isMatch) {
     throw new Error('Password is incorrect!');
   }
-  return user; 
+  return user;
 };
 
 const getUserById = async (id) => {
