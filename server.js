@@ -25,6 +25,11 @@ app.use('/api/books', bookRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/loans', loanRoutes);
 
+// Root URL route
+app.get('/', (req, res) => {
+  res.send('Library Management API is running. Use /api/books, /api/users, and /api/loans to access the respective resources.');
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
